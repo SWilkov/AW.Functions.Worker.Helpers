@@ -24,6 +24,18 @@ namespace AW.Functions.Worker.Helpers.Extensions
           {
             ApiResponseReason.UnAuthorized,
             new UnAuthorizedResponse()
+          },
+          {
+            ApiResponseReason.NotFound,
+            new NotFoundResponse()
+          },
+          {
+            ApiResponseReason.BadRequest,
+            new BadRequestResponse()
+          },
+          {
+            ApiResponseReason.Conflict,
+            new ConflictResponse()
           }
         };
 
